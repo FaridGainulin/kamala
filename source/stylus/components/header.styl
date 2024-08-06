@@ -1,0 +1,51 @@
+.header
+  &__container
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content space-around
+    +above($breakpoints.sm)
+      justify-content space-between
+    +above($breakpoints.md)
+      align-items: flex-start
+
+  &__title
+    display: none
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: column
+      align-items: center
+      gap: 8px
+    +above($breakpoints.md)
+      flex-direction: row
+      padding-top 30px
+      gap: 37px
+
+  &__title-text
+    padding 6px 13px
+    background-color $color-pink
+    border-radius: 15px
+    color: $color-white
+
+  &__logo
+    width 80px
+    height: auto
+    +above($breakpoints.sm)
+      width 120px
+    +above($breakpoints.md)
+      width 161px
+
+  &__connection
+    display: flex
+    align-items: center
+    gap: 8px
+    flex-direction: column
+    +above($breakpoints.md)
+      padding-top 25px
+      gap: 24px
+      flex-direction: row
+
+  &__call-me
+    display: none
+    +above($breakpoints.sm)
+      display: flex

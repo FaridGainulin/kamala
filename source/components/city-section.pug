@@ -1,0 +1,26 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      h2.city-section__title.font-w-bold.font-s-60.text-up
+        | Откройте 
+        br.no-br
+        | прибыльный бизнес 
+        br.no-br
+        | при поддержке 
+        br.no-br
+        | команды 
+        span.color-pink «КАМАЛА»
+      .city-section__sub-title.font-w-semi-bold.font-s-28
+        | и получайте 
+        span.font-w-bold.color-pink 530 000 рублей чистой прибыли 
+        br.no-br
+        | ежемесячно
+      .city-section__text.font-w-regular.font-s-24 Проверьте, свободен ли ваш город для работы
+      form.city-section__form(data-feedback-form)
+        input.input.main-item(type="text" name="city" autocomplete="off" placeholder="Ваш город")
+        input.input.main-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn.main-item(type="submit") Проверить город
+        .main-item.main-section__privacy-text.font-w-light.font-s-12.color-dark-blue
+          | Я принимаю условия 
+          a(href="#" data-remodal-target="privacy").main-section__privacy Политики <br class="no-br-md"> конфиденциальности
+      img.city-section__img(src="images/city-section-img.png" loading="lazy" width="1168" height="1318" alt="image")

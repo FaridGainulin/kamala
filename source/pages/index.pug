@@ -1,0 +1,19 @@
+extends ../layouts/base
+
+block body
+  .layout
+    main.main
+      include ../components/main-section
+      include ../components/finances-section
+      include ../components/advantages-section
+      include ../components/about-section
+      include ../components/invest-section
+      include ../components/steps-section
+      include ../components/city-section
+      include ../components/footer
+
+      //- include ../components/info-section
+      //- include ../components/presentation-section
+
+append scripts
+  script(src="js/swiper.js")

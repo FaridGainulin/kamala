@@ -1,0 +1,224 @@
+.invest-section
+  background-image: url('../images/invest-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color $color-light-green
+  padding 20px 10px 20px 10px
+  +above($breakpoints.sm)
+    padding 50px 15px 50px 15px
+  +above($breakpoints.md)
+    padding 100px 20px 70px 20px
+  +above($breakpoints.xxl)
+    padding 156px 0 94px 0
+
+  &__box
+    width 100%
+    max-width: 1498px
+    margin 0 auto 
+    border-radius: 20px
+    backdrop-filter: blur(20px);
+    background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.6) 100%);
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 50px 0 50px 0
+      border-radius: 30px
+    +above($breakpoints.md)
+      padding 100px 0 100px 0
+      border-radius: 50px
+    +above($breakpoints.xxl)
+      padding 134px 0 134px 0
+      border-radius: 80px
+
+  &__title
+    padding 0 0 20px 0
+    +above($breakpoints.sm)
+      padding 0 0 40px 0
+    +above($breakpoints.md)
+      padding 0 0 50px 0
+    +above($breakpoints.xxl)
+      padding 0 0 69px 0
+
+  &__blocks-top
+    display: flex
+    flex-direction: column
+    gap: 10px
+    padding-bottom 10px
+    +above($breakpoints.sm)
+      flex-direction: row
+
+  &__blocks-bottom
+    display: flex
+    flex-direction: column
+    gap: 10px
+    +above($breakpoints.sm)
+      flex-direction: row
+
+  &__block-1
+    width 100%
+    max-width: 585px
+    display: flex
+    flex-direction: column
+    gap: 6px
+  &__block-1-inner
+    display: flex
+    flex-direction: row
+    gap 6px
+  &__block-1-inner-desc
+    padding 18px 10px 18px 26px
+    background-color #fff
+    border-radius: 10px
+    width 100%
+    max-width: 283px
+  &__block-1-inner-price
+    padding 15px 10px 16px 24px
+    background-color $color-light-green
+    border-radius: 10px
+    width 100%
+    max-width: 296px
+    +above($breakpoints.md)
+      padding: 15px 10px 16px 12px;
+    +above($breakpoints.xxl)
+      padding 15px 10px 16px 24px
+
+  &__block-2
+    display: flex
+    flex-direction: column
+    gap: 5px
+    color: #fff
+    width 100%
+    max-width: 585px
+  &__block-2-inner
+    padding 15px 38px 15px 26px
+    background-color $color-green
+    border-radius: 20px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content space-between
+    +above($breakpoints.sm)
+      padding: 38px 38px 37px 26px;
+    +above($breakpoints.md)
+      padding: 35px 38px 35px 26px;
+    +above($breakpoints.xxl)
+      padding 39px 38px 39px 26px
+  &__block-2-inner-text
+    display: flex
+    flex-direction: column
+  &__block-2-img
+    width 40px
+    height: 40px
+    +above($breakpoints.sm)
+      width 84px
+      height: 84px
+
+  &__block-3
+    width 100%
+    max-width: 585px
+  &__block-3-wrapper
+    padding 26px 24px 26px 26px
+    background-color #fff
+    border-radius: 20px
+  &__block-3-sub-title
+    padding 8px 0 22px 0
+  &__block-3-inner
+    display: flex
+    flex-direction: row
+    gap: 4px
+  &__block-3-inner-text
+    width 100%
+    max-width 254px
+    padding 9px 10px 9px 10px
+    background-color #E7F8D1
+  &__block-3-inner-desc
+    width 100%
+    max-width: 277px
+    padding 9px 0 9px 10px
+    background-color #E7F8D1
+    letter-spacing: -0.5px;
+  &__block-3-bottom
+    padding-top 18px
+    display: flex
+    flex-direction: row
+    justify-content space-between
+  &__block-3-footer
+    width 100%
+    max-width: 585px
+    margin-top 40px
+    color: #fff
+    background: linear-gradient(135deg, #ff5fb2 0%, #cf1373 100%);
+    padding 34px 26px 27px 26px
+    border-radius: 20px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content space-between
+    +above($breakpoints.sm)
+      margin-top 34px
+    +above($breakpoints.md)
+      margin-top 10px
+  &__block-3-footer-left
+    letter-spacing: -1px;
+    width 500px
+    +above($breakpoints.sm)
+      width 537px
+    +above($breakpoints.md)
+      width 163px
+  &__block-3-footer-right
+    letter-spacing: -2px;
+    width 343px
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+  &__block-4
+    width 100%
+    max-width: 585px
+    padding 26px 24px 26px 26px
+    border-radius: 20px
+    background-color #fff
+  &__block-4-title
+    padding-bottom 22px
+  &__block-4-inner
+    display: flex
+    flex-direction: row
+    gap: 4px
+  &__block-4-inner-desc
+    width 100%
+    max-width: 254px
+    padding 9px 10px 9px 10px
+    background-color #E7F8D1
+  &__block-4-inner-price
+    width 100%
+    max-width: 277px
+    padding 9px 10px 9px 10px
+    background-color #E7F8D1
+  &__block-4-bottom
+    padding-top 18px
+    display: flex
+    flex-direction: row
+    align-items: flex-end
+    justify-content space-between
+
+  &__block-1,
+  &__block-2,
+  &__block-3,
+  &__block-4
+    width 300px !important
+    +above($breakpoints.sm)
+      width 358px !important
+    +above($breakpoints.md)
+      width 480px !important
+    +above($breakpoints.xxl)
+      width 585px !important
+
+  &__block-desktop
+    display: none
+    +above($breakpoints.sm)
+      display: block
+  &__block-mobile
+    +above($breakpoints.sm)
+      display: none
+
+.collor-change
+  background-color #CDECA6

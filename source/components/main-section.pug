@@ -1,0 +1,31 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      h1.main-section__title.font-w-bold.font-s-60.text-up
+        | Откройте 
+        br.no-br
+        | клининговую 
+        br.no-br
+        | компанию по 
+        br.no-br
+        | франшизе 
+        span.color-pink «КАМАЛА»
+      .main-section__sub-title.font-w-semi-bold.font-s-28
+        | и получайте 
+        span.font-w-bold.color-pink 530 000 рублей чистой прибыли 
+        br.no-br
+        | ежемесячно на услуге по комплексной 
+        br.no-br
+        | уборке помещений
+      .main-section__line
+      form.main-section__form(data-feedback-form)
+        input.input.main-item(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+        input.input.main-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn.main-item(type="submit") Получить план открытия
+        .main-item.main-section__privacy-text.font-w-light.font-s-12.color-dark-blue
+          | Я принимаю условия 
+          a(href="#" data-remodal-target="privacy").main-section__privacy Политики <br class="no-br-md"> конфиденциальности
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1340" height="1812" alt="image")
+      img.main-section__img-bg-large(src="images/main-section-img-bg-large.png" loading="lazy" width="551" height="464" alt="image")
+      img.main-section__img-bg-small(src="images/main-section-img-bg-small.png" loading="lazy" width="112" height="112" alt="image")

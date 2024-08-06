@@ -1,0 +1,45 @@
+.footer
+  background-color $color-dark-blue
+
+  &__container
+    display: flex
+    align-items: center
+    padding 14px 0
+    flex-direction: column
+    gap: 8px
+    +above($breakpoints.sm)
+      gap: 0
+      flex-direction: row
+      justify-content space-between
+
+  &__brand
+    color: $color-white
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 30px
+
+  &__brand-name
+    display: none
+    +above($breakpoints.sm)
+      display: block
+
+  &__logo
+    width 73px
+    height: auto
+
+  &__privacy
+    text-decoration: underline
+    cursor pointer
+    color: $color-light-green
+
+  &__connection
+    color: $color-white
+    display: flex
+    flex-direction: column
+    justify-content center
+    align-items: center
+    gap: 15px
+    +above($breakpoints.md)
+      gap: 24px
+      flex-direction: row

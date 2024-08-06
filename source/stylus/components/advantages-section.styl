@@ -1,0 +1,98 @@
+.advantages-section
+
+  &__container
+    position relative
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 60px 0 40px 0
+    +above($breakpoints.md)
+      padding 90px 0 50px 0
+    +above($breakpoints.xxl)
+      padding 130px 0 66px 0
+
+  &__title
+    padding 0 0 20px 0
+    line-height: 110% !important
+    +above($breakpoints.sm)
+      padding 0 0 40px 0
+    +above($breakpoints.md)
+      padding 0 0 50px 0
+    +above($breakpoints.xxl)
+      padding 0 0 76px 0
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 20px
+
+  &__card
+    width 280px !important
+    height: 155px
+    padding: 15px 10px 15px 15px
+    border-radius: 20px
+    background-color #FCEEF5
+    +above($breakpoints.sm)
+      width 174px !important
+      padding: 15px 5px 15px 8px
+      height: 160px
+    +above($breakpoints.md)
+      width 226px !important
+      height: 226px
+      padding: 26px 10px 26px 26px
+    +above($breakpoints.xxl)
+      width 280px !important
+      height: 216px
+
+  &__card-5
+    height: 155px
+    +above($breakpoints.sm)
+      height: 208px
+    +above($breakpoints.md)
+      height: 275px
+    +above($breakpoints.xxl)
+      height: 275px
+
+  &__card-5-text
+    letter-spacing: -0.1px
+    line-height 110% !important
+
+  &__card-num
+    width 30px
+    height: 30px
+    color: $color-white
+    background-color $color-light-green
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content center
+    margin-bottom 10px
+    +above($breakpoints.sm)
+      width 40px
+      height: 40px
+    +above($breakpoints.md)
+      margin-bottom 20px
+      width 61px
+      height: 61px
+
+  &__line-star
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      position: absolute
+      width: 537px;
+      bottom: 41px;
+      left: 184px;
+    +above($breakpoints.md)
+      width: 714px;
+      bottom: 48px;
+      left: 246px;
+    +above($breakpoints.xxl)
+      width: 879px;
+      bottom: 65px;
+      left: 301px;
+
+

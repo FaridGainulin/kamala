@@ -1,0 +1,67 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      img.finances-section__icon(src="images/finances-section-icon.png" loading="lazy" width="36" height="46" alt="icon")
+      img.finances-section__img-1(src="images/finances-section-img1.png" loading="lazy" width="560" height="560" alt="image")
+      img.finances-section__img-2(src="images/finances-section-img2.png" loading="lazy" width="560" height="560" alt="image")
+      h2.finances-section__title.font-s-60.font-w-bold.text-center
+        span.color-pink Какую прибыль 
+        | может приносить 
+        br.no-br
+        | клининговая компания
+      .finances-section__sub-title.text-center.font-w-semi-bold.font-s-24
+        | Ознакомьтесь с ключевыми цифрами франшизы
+      .swiper-finances
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card.swiper-slide
+            .finances-section__card-icon-wrapper
+              img.finances-section__card-icon(src="images/finances-section-card-img1.svg" loading="lazy" width="44" height="44" alt="icon")
+            .finances-section__card-text
+              .font-w-bold.font-s-38 от 530 000 ₽
+              .font-w-regular.font-s-16 размер ежемесячной <br class="no-br"> прибыли
+          .finances-section__card.swiper-slide.finances-section__card-2
+            .finances-section__card-icon-wrapper
+              img.finances-section__card-icon(src="images/finances-section-card-img2.svg" loading="lazy" width="44" height="44" alt="icon")
+            .finances-section__card-text
+              .font-w-bold.font-s-38 1 980 000 ₽
+              .font-w-regular.font-s-16 размер ежемесячной <br class="no-br"> выручки
+          .finances-section__card.swiper-slide
+            .finances-section__card-icon-wrapper
+              img.finances-section__card-icon(src="images/finances-section-card-img3.svg" loading="lazy" width="44" height="44" alt="icon")
+            .finances-section__card-text
+              .font-w-bold.font-s-38 550 000 ₽
+              .font-w-regular.font-s-16 стартовый размер <br class="no-br"> инвестиций
+          .finances-section__card.swiper-slide
+            .finances-section__card-icon-wrapper
+              img.finances-section__card-icon(src="images/finances-section-card-img4.svg" loading="lazy" width="44" height="44" alt="icon")
+            .finances-section__card-text
+              .font-w-bold.font-s-38 до 19 дней
+              .font-w-regular.font-s-16 понадобится на открытие <br class="no-br"> компании
+          .finances-section__card.swiper-slide
+            .finances-section__card-icon-wrapper
+              img.finances-section__card-icon(src="images/finances-section-card-img5.svg" loading="lazy" width="44" height="44" alt="icon")
+            .finances-section__card-text
+              .font-w-bold.font-s-38 26,7%
+              .font-w-regular.font-s-16 рентабельность по <br class="no-br"> чистой прибыли
+          .finances-section__card.swiper-slide
+            .finances-section__card-icon-wrapper
+              img.finances-section__card-icon(src="images/finances-section-card-img6.svg" loading="lazy" width="44" height="44" alt="icon")
+            .finances-section__card-text
+              .font-w-bold.font-s-38 3 месяца
+              .font-w-regular.font-s-16 средний срок <br class="no-br"> окупаемости
+        .finances-pagination.swiper-progress-finances
+      .finances-section__bottom
+        .finances-section__bottom-title.font-w-semi-bold.font-s-34
+          | Хотите получить детальные цифры для вашего 
+          br.no-br
+          | города и под ваш бюджет?
+        .font-w-semi-regular.font-s-24
+          | Скачайте финансовую модель франшизы 
+          span.font-w-bold  «КАМАЛА»
+        form.finances-section__form(data-feedback-form)
+          input.input.input--secondary.finances-item(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input.input--secondary.finances-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn.finances-item(type="submit") Скачать
+        .finances-section__privacy-text.font-w-light.font-s-12.color-white
+          | Я принимаю условия 
+          a(href="#" data-remodal-target="privacy").finances-section__privacy Политики конфиденциальности

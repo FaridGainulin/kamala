@@ -1,0 +1,183 @@
+.about-section
+  background-image: url('../images/about-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #fff
+
+  &__container
+    position relative
+    z-index 1
+    padding 20px 0 0 0
+    +above($breakpoints.sm)
+      padding 20px 0 80px 0
+    +above($breakpoints.md)
+      padding 32px 0 100px 0
+    +above($breakpoints.xxl)
+      padding 32px 0 127px 0
+
+  &__box
+    text-align: center
+    width 100%
+    max-width: 984px
+    margin 0 auto
+    padding 0 10px 20px 10px
+    background-color #fff
+    border-radius: 20px
+    +above($breakpoints.sm)
+      border-radius: 30px
+    +above($breakpoints.sm)
+      border-radius: 50px
+    +above($breakpoints.xxl)
+      padding 0
+      background-color transparent
+      background-image: url('../images/about-section-box-bg.png')
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+      height: 769px
+
+  &__title
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 30px 0 20px 0
+    +above($breakpoints.md)
+      padding 50px 0 29px 0
+    +above($breakpoints.xxl)
+      padding 96px 0 29px 0
+
+  &__text
+    padding 7px 0 20px 0
+    +above($breakpoints.sm)
+      padding 7px 0 30px 0
+    +above($breakpoints.md)
+      padding 7px 0 40px 0
+    +above($breakpoints.xxl)
+      padding 7px 0 53px 0
+
+  &__bottom
+    padding-top 20px
+    +above($breakpoints.sm)
+      padding-top 30px
+    +above($breakpoints.md)
+      padding-top 40px
+    +above($breakpoints.xxl)
+      padding-top 61px
+
+  &__bottom-text
+    text-align: center
+    padding-bottom 20px
+    +above($breakpoints.sm)
+      padding-bottom 30px
+      text-align: start
+
+  &__form
+    display: flex
+    flex-direction: column
+    justify-content center
+    align-items: center
+    padding-bottom 8px
+    gap: 8px
+    +above($breakpoints.sm)
+      justify-content start
+      align-items: flex-start
+    +above($breakpoints.md)
+      gap: 10px
+      padding-bottom 16px
+      flex-direction: row
+      flex-wrap: wrap
+    +above($breakpoints.xxl)
+      width 821px
+
+  &__privacy-text
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+      padding-left 14px
+    +above($breakpoints.md)
+      padding-left 0
+  &__privacy
+    text-decoration: underline
+    cursor pointer
+
+  &__img
+    width 300px
+    height: auto
+    margin: 20px auto 0
+    +above($breakpoints.sm)
+      position: absolute
+      width 300px
+      bottom: 0
+      right: 0
+    +above($breakpoints.md)
+      width 300px
+      right: -83px;
+    +above($breakpoints.xxl)
+      width 423px
+      right: -100px;
+
+  &__ring-small
+    position: absolute
+    z-index -1
+    width 100px
+    height: auto
+    top: 299px;
+    left: -50px;
+    +above($breakpoints.sm)
+      width 200px
+      top: 177px;
+      left: -100px;
+    +above($breakpoints.md)
+      width 250px
+      top: 178px;
+      left: -125px
+    +above($breakpoints.xxl)
+      width 282px
+      top: 280px;
+      left: -40px;
+
+  &__ring-large
+    position: absolute
+    z-index -1
+    width: 460px;
+    height: auto;
+    bottom: 0;
+    right: -33px;
+    +above($breakpoints.sm)
+      width: 460px;
+      bottom: 0
+      right: -22px
+    +above($breakpoints.md)
+      width 500px
+      bottom: 0
+      right: -117px
+    +above($breakpoints.xxl)
+      width 691px
+      bottom: 0
+      right: -106px
+
+  &__star
+    position: absolute
+    width 20px
+    height auto
+    bottom: 301px;
+    right: 286px;
+    +above($breakpoints.sm)
+      bottom: 268px;
+      right: 303px;
+    +above($breakpoints.md)
+      width 42px
+      bottom: 293px;
+      right: 188px;
+    +above($breakpoints.xxl)
+      bottom: 368px;
+      right: 342px;
+
+.about-item
+  width 280px !important
+  +above($breakpoints.sm)
+    width 370px !important
+  +above($breakpoints.md)
+    width 240px !important
+  +above($breakpoints.xxl)
+    width 267px !important
